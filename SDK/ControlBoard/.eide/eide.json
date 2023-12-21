@@ -3,11 +3,17 @@
   "type": "ARM",
   "dependenceList": [],
   "srcDirs": [
-    ".eide/deps"
+    ".eide/deps",
+    "Core",
+    "Drivers"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
-    "files": [],
+    "files": [
+      {
+        "path": "Core/Startup/startup_stm32h743vitx.s"
+      }
+    ],
     "folders": []
   },
   "outDir": "build",
@@ -21,9 +27,9 @@
       "excludeList": [],
       "toolchain": "GCC",
       "compileConfig": {
-        "cpuType": "Cortex-M3",
-        "floatingPointHardware": "none",
-        "scatterFilePath": "<YOUR_LINKER_SCRIPT>.lds",
+        "cpuType": "Cortex-M7",
+        "floatingPointHardware": "double",
+        "scatterFilePath": "STM32H743VITX_FLASH.ld",
         "useCustomScatterFile": true,
         "storageLayout": {
           "RAM": [],
@@ -31,27 +37,42 @@
         },
         "options": "null"
       },
-      "uploader": "JLink",
+      "uploader": "OpenOCD",
       "uploadConfig": {
         "bin": "",
-        "baseAddr": "",
-        "cpuInfo": {
-          "vendor": "null",
-          "cpuName": "null"
-        },
-        "proType": 1,
-        "speed": 8000,
-        "otherCmds": ""
+        "target": "stm32h7x",
+        "interface": "stlink",
+        "baseAddr": "0x08000000"
       },
-      "uploadConfigMap": {},
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "null",
+            "cpuName": "null"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        }
+      },
       "custom_dep": {
         "name": "default",
         "incList": [
-          ".eide/deps"
+          ".eide/deps",
+          "Core/Inc",
+          "Drivers/STM32H7xx_HAL_Driver/Inc",
+          "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
+          "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+          "Drivers/CMSIS/Include"
         ],
         "libList": [],
         "sourceDirList": [],
-        "defineList": []
+        "defineList": [
+          "USE_HAL_DRIVER",
+          "STM32H743xx"
+        ]
       }
     }
   },
