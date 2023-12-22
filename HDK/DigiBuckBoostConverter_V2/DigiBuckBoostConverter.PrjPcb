@@ -50,23 +50,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=mainPower.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RRQGKXNK
-
-[Document2]
 DocumentPath=E:\AD-ws\libraries\RLC_lib\eCap_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +66,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document3]
+[Document2]
 DocumentPath=E:\AD-ws\libraries\RLC_lib\eCap_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +83,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document4]
+[Document3]
 DocumentPath=E:\AD-ws\libraries\RLC_lib\Inductance_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GKATQWEL
 
-[Document5]
+[Document4]
 DocumentPath=E:\AD-ws\libraries\RLC_lib\Inductance_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GGXAHQAF
 
-[Document6]
+[Document5]
 DocumentPath=E:\AD-ws\libraries\RLC_lib\RC_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document6]
 DocumentPath=E:\AD-ws\libraries\RLC_lib\RC_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document7]
 DocumentPath=E:\AD-ws\libraries\IC_lib\IC_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VLIYEUWH
 
-[Document9]
+[Document8]
 DocumentPath=E:\AD-ws\libraries\IC_lib\IC_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XHHFYUGS
 
-[Document10]
+[Document9]
 DocumentPath=E:\AD-ws\libraries\MOSFET_lib\MOSFET_pcbLib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=E:\AD-ws\libraries\MOSFET_lib\MOSFET_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=STM32H7.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KICEKBXT
 
-[Document13]
+[Document12]
 DocumentPath=E:\AD-ws\libraries\Switch_lib\Button_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -270,7 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=E:\AD-ws\libraries\Switch_lib\Button_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -287,7 +270,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document14]
 DocumentPath=E:\AD-ws\libraries\OSC_lib\OSC_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -304,7 +287,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document15]
 DocumentPath=E:\AD-ws\libraries\OSC_lib\OSC_schilb.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -321,7 +304,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document16]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\2.54CN_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -338,7 +321,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\2.54CN_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +338,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document18]
 DocumentPath=E:\AD-ws\libraries\Diode_lib\Diode_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -372,7 +355,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document19]
 DocumentPath=E:\AD-ws\libraries\Diode_lib\Diode_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -389,7 +372,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document20]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\FPC_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -406,7 +389,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document21]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\FPC_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -423,7 +406,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document23]
+[Document22]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\M3-CopperPillar_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -440,7 +423,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document23]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\M3-CopperPillar_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -457,7 +440,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document24]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\MKDSN.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -474,7 +457,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document25]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\MKDSN.SCHLIB
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -491,7 +474,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document27]
+[Document26]
 DocumentPath=STM32H7.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -508,7 +491,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JEOWAKJL
 
-[Document28]
+[Document27]
 DocumentPath=mainPower_V2.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -525,7 +508,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QTBEEOXQ
 
-[Document29]
+[Document28]
 DocumentPath=E:\AD-ws\libraries\Switch_lib\Switch_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -542,7 +525,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OWETLJPT
 
-[Document30]
+[Document29]
 DocumentPath=E:\AD-ws\libraries\Switch_lib\Switch_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -559,7 +542,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SLSGSSTI
 
-[Document31]
+[Document30]
 DocumentPath=E:\AD-ws\libraries\Switch_lib\DIP-Switch_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -576,7 +559,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document32]
+[Document31]
 DocumentPath=E:\AD-ws\libraries\Switch_lib\Dip-Switch_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -593,7 +576,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document33]
+[Document32]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\GH1.25_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -610,7 +593,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document34]
+[Document33]
 DocumentPath=E:\AD-ws\libraries\Connector_lib\GH1.25_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -627,7 +610,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document35]
+[Document34]
 DocumentPath=E:\AD-ws\libraries\LED_lib\LED_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -644,7 +627,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document36]
+[Document35]
 DocumentPath=E:\AD-ws\libraries\LED_lib\LED_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -661,7 +644,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document37]
+[Document36]
 DocumentPath=D:\资料\AD-ws\libraries\RLC_lib\RC_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -678,7 +661,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document38]
+[Document37]
 DocumentPath=D:\资料\AD-ws\libraries\RLC_lib\RC_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -695,7 +678,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document39]
+[Document38]
 DocumentPath=D:\资料\AD-ws\libraries\Connector_lib\2.54CN_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -712,7 +695,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HHGMNDRR
 
-[Document40]
+[Document39]
 DocumentPath=D:\资料\AD-ws\libraries\Connector_lib\2.54CN_schlib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -729,7 +712,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QUFYVRHW
 
-[Document41]
+[Document40]
 DocumentPath=D:\资料\AD-ws\libraries\LED_lib\LED_pcblib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -746,8 +729,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document42]
+[Document41]
 DocumentPath=D:\资料\AD-ws\libraries\LED_lib\LED_schlib.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document42]
+DocumentPath=mainPower_V2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
