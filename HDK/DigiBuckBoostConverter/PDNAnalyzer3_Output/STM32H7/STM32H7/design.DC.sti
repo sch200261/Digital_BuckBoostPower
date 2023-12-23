@@ -1,0 +1,213 @@
+StiFile 1.2
+# File generated on Sun Dec 24 03:07:02 2023
+
+Electric 1:
+  name: "U4"
+  voltage: 3.29954
+  current: -0.459556
+  pluspin: 1  voltage: 3.29954  current: -0.277595  name: "U4-2"
+  pluspin: 2  voltage: 3.29954  current: -0.181961  name: "U4-4"
+  minpin: 0  voltage: 0  current: 0.459556  name: "U4.min"
+
+Electric 2:
+  name: "+5-U4"
+  voltage: 4.95194
+  current: 0.459561
+  pluspin: 4  voltage: 4.95194  current: 0.459561  name: "U4-3"
+  minpin: 0  voltage: 0  current: -0.459561  name: "+5-U4.min"
+
+Electric 3:
+  name: "U9"
+  voltage: 3.29994
+  current: -0.0550132
+  pluspin: 5  voltage: 3.29994  current: -0.0550132  name: "U9-2"
+  minpin: 0  voltage: 0  current: 0.0550132  name: "U9.min"
+
+Electric 4:
+  name: "+5-U9"
+  voltage: 4.95174
+  current: 0.0550181
+  pluspin: 7  voltage: 4.95174  current: 0.0550181  name: "U9-1"
+  minpin: 0  voltage: 0  current: -0.0550181  name: "+5-U9.min"
+
+Electric 5:
+  name: "H7"
+  voltage: 4.99933
+  current: -0.664594
+  pluspin: 8  voltage: 4.99933  current: -0.664594  name: "H7-2"
+  minpin: 0  voltage: 0  current: 0.664594  name: "H7.min"
+
+Electric 6:
+  name: "H13"
+  voltage: 4.98081
+  current: 0.050005
+  pluspin: 10  voltage: 4.98081  current: 0.050005  name: "H13-3"
+  minpin: 0  voltage: 0  current: -0.050005  name: "H13.min"
+
+Electric 7:
+  name: "H11"
+  voltage: 4.9537
+  current: 0.050005
+  pluspin: 12  voltage: 4.9537  current: 0.050005  name: "H11-1"
+  minpin: 0  voltage: 0  current: -0.050005  name: "H11.min"
+
+Electric 8:
+  name: "H8"
+  voltage: 4.96762
+  current: 0.050005
+  pluspin: 14  voltage: 4.96762  current: 0.050005  name: "H8-3"
+  minpin: 0  voltage: 0  current: -0.050005  name: "H8.min"
+
+Electric 9:
+  name: "U11"
+  voltage: 3.27688
+  current: 0.0275033
+  pluspin: 16  voltage: 3.27688  current: 0.0275033  name: "U11-3"
+  minpin: 0  voltage: 0  current: -0.0275033  name: "U11.min"
+
+Electric 10:
+  name: "X1"
+  voltage: 3.27758
+  current: 0.00500328
+  pluspin: 19  voltage: 3.27758  current: 0.00500328  name: "X1-4"
+  minpin: 0  voltage: 0  current: -0.00500328  name: "X1.min"
+
+Electric 11:
+  name: "U10"
+  voltage: 3.27771
+  current: 0.300003
+  pluspin: 21  voltage: 3.27771  current: 0.0483341  name: "U10-6"
+  pluspin: 22  voltage: 3.27771  current: 0.0768413  name: "U10-11"
+  pluspin: 23  voltage: 3.27771  current: 0.0594892  name: "U10-21"
+  pluspin: 24  voltage: 3.27771  current: 0.0321519  name: "U10-27"
+  pluspin: 25  voltage: 3.27771  current: 0.0613721  name: "U10-50"
+  pluspin: 26  voltage: 3.27771  current: 0.010831  name: "U10-75"
+  pluspin: 27  voltage: 3.27771  current: 0.0109838  name: "U10-100"
+  minpin: 0  voltage: 0  current: -0.300003  name: "U10.min"
+
+Electric 12:
+  name: "U8"
+  voltage: 3.29555
+  current: 0.0200033
+  pluspin: 34  voltage: 3.29555  current: 0.0200033  name: "U8-8"
+  minpin: 0  voltage: 0  current: -0.0200033  name: "U8.min"
+
+Electric 13:
+  name: "U7"
+  voltage: 3.29471
+  current: 0.0100033
+  pluspin: 36  voltage: 3.29471  current: 0.0100033  name: "U7-6"
+  minpin: 0  voltage: 0  current: -0.0100033  name: "U7.min"
+
+Electric 14:
+  name: "U6"
+  voltage: 3.29503
+  current: 0.0100033
+  pluspin: 39  voltage: 3.29503  current: 0.0100033  name: "U6-6"
+  minpin: 0  voltage: 0  current: -0.0100033  name: "U6.min"
+
+Electric 15:
+  name: "U5"
+  voltage: 3.29431
+  current: 0.0100033
+  pluspin: 42  voltage: 3.29431  current: 0.0100033  name: "U5-6"
+  minpin: 0  voltage: 0  current: -0.0100033  name: "U5.min"
+
+Electric 16:
+  name: "Screen1"
+  voltage: 3.29594
+  current: 0.0500033
+  pluspin: 45  voltage: 3.29594  current: 0.0500033  name: "Screen1-7"
+  minpin: 0  voltage: 0  current: -0.0500033  name: "Screen1.min"
+
+Electric 17:
+  name: "R36"
+  voltage: 3.29951
+  current: 0.0030033
+  pluspin: 47  voltage: 3.29951  current: 0.0030033  name: "R36-1"
+  minpin: 0  voltage: 0  current: -0.0030033  name: "R36.min"
+
+Electric 18:
+  name: "R35"
+  voltage: 3.27776
+  current: 0.00300328
+  pluspin: 49  voltage: 3.27776  current: 0.00300328  name: "R35-2"
+  minpin: 0  voltage: 0  current: -0.00300328  name: "R35.min"
+
+Electric 19:
+  name: "R24"
+  voltage: 3.29586
+  current: 0.0030033
+  pluspin: 50  voltage: 3.29586  current: 0.0030033  name: "R24-2"
+  minpin: 0  voltage: 0  current: -0.0030033  name: "R24.min"
+
+Electric 20:
+  name: "R23"
+  voltage: 3.29587
+  current: 0.0030033
+  pluspin: 51  voltage: 3.29587  current: 0.0030033  name: "R23-2"
+  minpin: 0  voltage: 0  current: -0.0030033  name: "R23.min"
+
+Electric 21:
+  name: "R22"
+  voltage: 3.29588
+  current: 0.0030033
+  pluspin: 52  voltage: 3.29588  current: 0.0030033  name: "R22-2"
+  minpin: 0  voltage: 0  current: -0.0030033  name: "R22.min"
+
+Electric 22:
+  name: "R21"
+  voltage: 3.29616
+  current: 0.0030033
+  pluspin: 53  voltage: 3.29616  current: 0.0030033  name: "R21-2"
+  minpin: 0  voltage: 0  current: -0.0030033  name: "R21.min"
+
+Electric 23:
+  name: "R20"
+  voltage: 3.29618
+  current: 0.0030033
+  pluspin: 54  voltage: 3.29618  current: 0.0030033  name: "R20-2"
+  minpin: 0  voltage: 0  current: -0.0030033  name: "R20.min"
+
+Electric 24:
+  name: "R19"
+  voltage: 3.29648
+  current: 0.0030033
+  pluspin: 55  voltage: 3.29648  current: 0.0030033  name: "R19-2"
+  minpin: 0  voltage: 0  current: -0.0030033  name: "R19.min"
+
+Electric 25:
+  name: "R18"
+  voltage: 3.27739
+  current: 0.00300328
+  pluspin: 56  voltage: 3.27739  current: 0.00300328  name: "R18-2"
+  minpin: 0  voltage: 0  current: -0.00300328  name: "R18.min"
+
+Electric 26:
+  name: "U10"
+  voltage: 3.29778
+  current: 0.0100033
+  pluspin: 57  voltage: 3.29778  current: 0.0100033  name: "U10-20"
+  minpin: 0  voltage: 0  current: -0.0100033  name: "U10.min"
+
+Electric 27:
+  name: "U7"
+  voltage: 3.29892
+  current: 0.0150033
+  pluspin: 58  voltage: 3.29892  current: 0.0150033  name: "U7-3"
+  minpin: 0  voltage: 0  current: -0.0150033  name: "U7.min"
+
+Electric 28:
+  name: "U6"
+  voltage: 3.29959
+  current: 0.0150033
+  pluspin: 59  voltage: 3.29959  current: 0.0150033  name: "U6-3"
+  minpin: 0  voltage: 0  current: -0.0150033  name: "U6.min"
+
+Electric 29:
+  name: "U5"
+  voltage: 3.29845
+  current: 0.0150033
+  pluspin: 60  voltage: 3.29845  current: 0.0150033  name: "U5-3"
+  minpin: 0  voltage: 0  current: -0.0150033  name: "U5.min"
+
