@@ -1,0 +1,107 @@
+StiFile 1.2
+# File generated on Sun Dec 24 01:44:16 2023
+
+Electric 1:
+  name: "Q1"
+  voltage: 35.8949
+  current: -15.0001
+  pluspin: 3  voltage: 35.8949  current: -5.15848  name: "Q1-1"
+  pluspin: 2  voltage: 35.8949  current: -5.01584  name: "Q1-2"
+  pluspin: 1  voltage: 35.895  current: -4.82582  name: "Q1-3"
+  minpin: 0  voltage: 0  current: 15.0001  name: "Q1.min"
+
+Electric 2:
+  name: "C1P-Q1"
+  voltage: 35.946
+  current: 10.0001
+  pluspin: 8  voltage: 35.946  current: 1.45185  name: "Q1-5"
+  pluspin: 7  voltage: 35.9459  current: 0.903195  name: "Q1-6"
+  pluspin: 6  voltage: 35.946  current: 1.94004  name: "Q1-7"
+  pluspin: 5  voltage: 35.946  current: 5.70506  name: "Q1-8"
+  minpin: 0  voltage: 0  current: -10.0001  name: "C1P-Q1.min"
+
+Electric 3:
+  name: "Q2"
+  voltage: 35.965
+  current: -5.00004
+  pluspin: 9  voltage: 35.965  current: -1.82921  name: "Q2-5"
+  pluspin: 10  voltage: 35.965  current: -1.27934  name: "Q2-6"
+  pluspin: 11  voltage: 35.965  current: -0.797935  name: "Q2-7"
+  pluspin: 12  voltage: 35.965  current: -1.09356  name: "Q2-8"
+  minpin: 0  voltage: 0  current: 5.00004  name: "Q2.min"
+
+Electric 4:
+  name: "B_HS-Q2"
+  voltage: 35.7987
+  current: 5.00007
+  pluspin: 14  voltage: 35.7987  current: 2.20274  name: "Q2-1"
+  pluspin: 15  voltage: 35.7987  current: 1.5024  name: "Q2-2"
+  pluspin: 16  voltage: 35.7987  current: 1.29494  name: "Q2-3"
+  minpin: 0  voltage: 0  current: -5.00007  name: "B_HS-Q2.min"
+
+Electric 5:
+  name: "R1"
+  voltage: 0.0352005
+  current: 10.0001
+  pluspin: 17  voltage: 35.9858  current: 10.0001  name: "R1-1"
+  minpin: 18  voltage: 35.9506  current: -10.0001  name: "R1-2"
+
+Electric 6:
+  name: "CN1"
+  voltage: 35.9899
+  current: -10.0001
+  pluspin: 19  voltage: 35.9899  current: -6.82078  name: "CN1-1"
+  pluspin: 20  voltage: 35.99  current: -3.17936  name: "CN1-2"
+  minpin: 0  voltage: 0  current: 10.0001  name: "CN1.min"
+
+Electric 7:
+  name: "L1"
+  voltage: 0.0351202
+  current: 10.0001
+  pluspin: 22  voltage: 35.884  current: 3.19563  name: "L1-1"
+  pluspin: 21  voltage: 35.884  current: 6.80447  name: "L1-1"
+  minpin: 24  voltage: 35.8489  current: -7.58298  name: "L1-2"
+  minpin: 23  voltage: 35.8489  current: -2.41713  name: "L1-2"
+
+Electric 8:
+  name: "R2"
+  voltage: 0.0352004
+  current: 10.0001
+  pluspin: 25  voltage: 35.8403  current: 10.0001  name: "R2-1"
+  minpin: 26  voltage: 35.8051  current: -10.0001  name: "R2-2"
+
+Electric 9:
+  name: "Q4"
+  voltage: 35.7975
+  current: 5.00004
+  pluspin: 27  voltage: 35.7975  current: 3.46959  name: "Q4-5"
+  pluspin: 28  voltage: 35.7975  current: 0.816879  name: "Q4-6"
+  pluspin: 29  voltage: 35.7975  current: 0.509347  name: "Q4-7"
+  pluspin: 30  voltage: 35.7975  current: 0.204218  name: "Q4-8"
+  minpin: 0  voltage: 0  current: -5.00004  name: "Q4.min"
+
+Electric 10:
+  name: "Q3"
+  voltage: 35.8901
+  current: 5.00004
+  pluspin: 31  voltage: 35.89  current: -2.14495  name: "Q3-5"
+  pluspin: 32  voltage: 35.8901  current: 1.1465  name: "Q3-6"
+  pluspin: 33  voltage: 35.8901  current: 2.78098  name: "Q3-7"
+  pluspin: 34  voltage: 35.8901  current: 3.21752  name: "Q3-8"
+  minpin: 0  voltage: 0  current: -5.00004  name: "Q3.min"
+
+Electric 11:
+  name: "R3"
+  voltage: 0.0176001
+  current: 5.00004
+  pluspin: 35  voltage: 35.9622  current: 5.00004  name: "R3-1"
+  minpin: 36  voltage: 35.9446  current: -5.00004  name: "R3-2"
+
+Electric 12:
+  name: "CN2"
+  voltage: 35.9418
+  current: 5.00004
+  pluspin: 37  voltage: 35.9418  current: 2.24592  name: "CN2-1"
+  pluspin: 38  voltage: 35.9418  current: 2.75412  name: "CN2-2"
+  minpin: 0  voltage: 0  current: -5.00004  name: "CN2.min"
+
