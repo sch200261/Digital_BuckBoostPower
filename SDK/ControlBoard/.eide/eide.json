@@ -6,7 +6,8 @@
     ".eide/deps",
     "Core",
     "Drivers",
-    "Middlewares"
+    "Middlewares",
+    "Usercode"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
@@ -71,7 +72,8 @@
           "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
           "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
           "Drivers/CMSIS/Include",
-          "Core/ThreadSafe"
+          "Core/ThreadSafe",
+          "Usercode/Inc"
         ],
         "libList": [],
         "sourceDirList": [],
