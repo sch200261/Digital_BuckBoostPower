@@ -5,22 +5,19 @@
   "srcDirs": [
     ".eide/deps",
     "Core",
-    "Drivers"
+    "Drivers",
+    "Middlewares"
   ],
   "virtualFolder": {
     "name": "<virtual_root>",
-    "files": [
-      {
-        "path": "Core/Startup/startup_stm32h743vitx.s"
-      }
-    ],
+    "files": [],
     "folders": []
   },
   "outDir": "build",
   "deviceName": null,
   "packDir": null,
   "miscInfo": {
-    "uid": "80a0092e4cdb619eebaf92ac2c31c147"
+    "uid": "e08f5bf7ad7f852d04d36c4e0bd02cbe"
   },
   "targets": {
     "Debug": {
@@ -43,7 +40,7 @@
         "proType": "SWD",
         "resetMode": "default",
         "runAfterProgram": true,
-        "speed": "4000",
+        "speed": 4000,
         "address": "0x08000000",
         "elFile": "None",
         "optionBytes": ".eide/debug.st.option.bytes.ini",
@@ -60,23 +57,6 @@
           "proType": 1,
           "speed": 8000,
           "otherCmds": ""
-        },
-        "OpenOCD": {
-          "bin": "",
-          "target": "stm32h7x",
-          "interface": "stlink",
-          "baseAddr": "0x08000000"
-        },
-        "STLink": {
-          "bin": "",
-          "proType": "SWD",
-          "resetMode": "default",
-          "runAfterProgram": true,
-          "speed": "4000",
-          "address": "0x08000000",
-          "elFile": "None",
-          "optionBytes": ".eide/debug.st.option.bytes.ini",
-          "otherCmds": ""
         }
       },
       "custom_dep": {
@@ -86,14 +66,19 @@
           "Core/Inc",
           "Drivers/STM32H7xx_HAL_Driver/Inc",
           "Drivers/STM32H7xx_HAL_Driver/Inc/Legacy",
+          "Middlewares/Third_Party/FreeRTOS/Source/include",
+          "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS",
+          "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F",
           "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
-          "Drivers/CMSIS/Include"
+          "Drivers/CMSIS/Include",
+          "Core/ThreadSafe"
         ],
         "libList": [],
         "sourceDirList": [],
         "defineList": [
           "USE_HAL_DRIVER",
-          "STM32H743xx"
+          "STM32H743xx",
+          "STM32_THREAD_SAFE_STRATEGY=4"
         ]
       }
     }
