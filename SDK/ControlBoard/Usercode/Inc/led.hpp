@@ -13,9 +13,9 @@
 class Color
 {
 public:
-    uint8_t R; // 红色亮度0-255
-    uint8_t G; // 绿色亮度0-255
-    uint8_t B; // 蓝色亮度0-255
+    const uint8_t R; // 红色亮度0-255
+    const uint8_t G; // 绿色亮度0-255
+    const uint8_t B; // 蓝色亮度0-255
 
     Color(uint8_t R, uint8_t G, uint8_t B)
         : R(R), G(G), B(B){};
@@ -113,3 +113,8 @@ public:
 };
 
 extern Led LedMain;
+
+extern Color ColorError;
+extern Color ColorNormal;
+extern Color ColorInit;
+extern Color ColorWarning;
