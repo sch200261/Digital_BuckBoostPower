@@ -10,6 +10,17 @@
 #include "main.h"
 #include "tim.h"
 
+class Color
+{
+public:
+    uint8_t R; // 红色亮度0-255
+    uint8_t G; // 绿色亮度0-255
+    uint8_t B; // 蓝色亮度0-255
+
+    Color(uint8_t R, uint8_t G, uint8_t B)
+        : R(R), G(G), B(B){};
+};
+
 class Led
 {
 private:
@@ -27,12 +38,12 @@ private:
     void EnableLED(void)
     {
         this->LED_State = true;
-    };
+    }
 
     void DisableLED(void)
     {
         this->LED_State = false;
-    };
+    }
 
 public:
     Led(uint32_t RedChannel, uint32_t GreenChannel, uint32_t BlueChannel, TIM_HandleTypeDef *Redtim, TIM_HandleTypeDef *Greentim = nullptr, TIM_HandleTypeDef *Bluetim = nullptr)
@@ -48,51 +59,57 @@ public:
         } else {
             this->Bluetim = Bluetim;
         }
-    };
+    }
 
-    void LED_Init(void) // 初始化TIM计数
+    /// @brief 使用RGB数值设置LED颜色
+    /// @param R 红色亮度0-255
+    /// @param G 绿色亮度0-255
+    /// @param B 蓝色亮度0-255
+    void SetColor(uint8_t R, uint8_t G, uint8_t B)
     {
-        HAL_TIM_Base_Start(Redtim);
-        if (Greentim != Redtim) {
-            HAL_TIM_Base_Start(Greentim);
-        }
-        if (Bluetim != Greentim) {
-            HAL_TIM_Base_Start(Bluetim);
-        }
-    };
-
-    void SetColor(uint8_t R, uint8_t G, uint8_t B) // 设置LED颜色
-    {
-        this->Red   = R * 4; // 红色亮度0-255
-        this->Green = G * 4; // 绿色亮度0-255
-        this->Blue  = B * 4; // 蓝色亮度0-255
-    };
-
-    void LED_ON(void) // 启动并刷新LED颜色
-    {
+        this->Red   = R * 4;
+        this->Green = G * 4;
+        this->Blue  = B * 4;
         __HAL_TIM_SetCompare(Redtim, RedChannel, Red);
         __HAL_TIM_SetCompare(Greentim, GreenChannel, Green);
         __HAL_TIM_SetCompare(Bluetim, BlueChannel, Blue);
+    }
+
+    /// @brief 使用颜色类设置LED颜色
+    /// @param RGB 传函为颜色类
+    void SetColor(Color RGB)
+    {
+        this->Red   = RGB.R * 4;
+        this->Green = RGB.G * 4;
+        this->Blue  = RGB.B * 4;
+        __HAL_TIM_SetCompare(Redtim, RedChannel, Red);
+        __HAL_TIM_SetCompare(Greentim, GreenChannel, Green);
+        __HAL_TIM_SetCompare(Bluetim, BlueChannel, Blue);
+    }
+
+    /// @brief 启动LED
+    /// @param  void
+    void LED_ON(void)
+    {
         if (LED_State == false) {
             EnableLED();
             HAL_TIM_PWM_Start(Redtim, RedChannel);
             HAL_TIM_PWM_Start(Greentim, GreenChannel);
             HAL_TIM_PWM_Start(Bluetim, BlueChannel);
         }
-    };
+    }
 
-    void LED_OFF(void) // 关闭并刷新LED颜色
+    /// @brief 关闭LED
+    /// @param  void
+    void LED_OFF(void)
     {
-        __HAL_TIM_SetCompare(Redtim, RedChannel, Red);
-        __HAL_TIM_SetCompare(Greentim, GreenChannel, Green);
-        __HAL_TIM_SetCompare(Bluetim, BlueChannel, Blue);
         if (LED_State == true) {
             DisableLED();
             HAL_TIM_PWM_Stop(Redtim, RedChannel);
             HAL_TIM_PWM_Stop(Greentim, GreenChannel);
             HAL_TIM_PWM_Stop(Bluetim, BlueChannel);
         }
-    };
+    }
 };
 
 extern Led LedMain;
