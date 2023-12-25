@@ -65,6 +65,12 @@ void Error_Handler(void);
 #define PWMBL_GPIO_Port GPIOE
 #define PWMBH_Pin GPIO_PIN_11
 #define PWMBH_GPIO_Port GPIOE
+#define LCD_CS_Pin GPIO_PIN_12
+#define LCD_CS_GPIO_Port GPIOB
+#define LCD_WR_RS_Pin GPIO_PIN_8
+#define LCD_WR_RS_GPIO_Port GPIOD
+#define LCD_RESET_Pin GPIO_PIN_9
+#define LCD_RESET_GPIO_Port GPIOD
 #define LEDG_Pin GPIO_PIN_13
 #define LEDG_GPIO_Port GPIOD
 #define LEDR_Pin GPIO_PIN_14
