@@ -73,8 +73,7 @@
           "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
           "Drivers/CMSIS/Include",
           "Core/ThreadSafe",
-          "Usercode/Inc",
-          "Usercode/lcd"
+          "Usercode/Inc"
         ],
         "libList": [],
         "sourceDirList": [],
