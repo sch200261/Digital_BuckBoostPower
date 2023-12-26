@@ -37,7 +37,7 @@ public:
     /// @param Duty 占空比0-1.000
     void SetDuty(double Duty)
     {
-        this->Pulse = (uint16_t)(Duty * ReloadCount);
+        this->Pulse = Duty * ReloadCount;
         __HAL_TIM_SetCompare(PWMtim, Channel, Pulse);
         //__HAL_TIM_SetCompare(PWMtim, NChannel, Pulse);
     }

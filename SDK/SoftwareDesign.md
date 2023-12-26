@@ -163,6 +163,8 @@ void LED_OFF(void)													   //关闭LED
 
 注意事项：电源板使用的半桥驱动SI8233-BD-D-IS具有可编程死区功能，可通过修改DT脚对地电阻Rdt大小进行编程。默认使用3.3k，死区时间Deadtime = 3300 * 0.01（ns），即33ns。需测试电源板mos开关的Rise time和Fall time再按需求修改Rdt或设置软件死区。
 
+默认关闭软件死区。
+
 #### mospwm.hpp
 
 互补PWM类
