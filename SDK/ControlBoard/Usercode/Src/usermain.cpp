@@ -9,10 +9,10 @@ using namespace std;
 void StartDefaultTask(void const *argument)
 {
 
-    PWMA.SetDuty(0.5000);
-    PWMA.PWM_ON();
-    PWMB.SetDuty(0.2000);
-    PWMB.PWM_ON();
+    // PWMA.SetDuty(0.6000);
+    // PWMA.PWM_ON();
+    // PWMB.SetDuty(0.4000);
+    // PWMB.PWM_ON();
 
     while (true) {
 

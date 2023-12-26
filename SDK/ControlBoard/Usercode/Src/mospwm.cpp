@@ -7,5 +7,5 @@
 /* Includes ------------------------------------------------------------------*/
 #include <mospwm.hpp>
 
-CoPWM PWMA(&htim1, TIM_CHANNEL_1, 599);
-CoPWM PWMB(&htim1, TIM_CHANNEL_2, 599);
+CoPWM PWMA(&htim1, TIM_CHANNEL_1, 600);
+CoPWM PWMB(&htim1, TIM_CHANNEL_2, 600);
