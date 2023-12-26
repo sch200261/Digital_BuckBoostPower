@@ -1,5 +1,6 @@
 /unusedDesign/*
 /SDK/Datasheets/*
+/SDK/InstrumentDatsheets/*
 /SDK/STM32F407VGT6/*
 /SDK/STM32H750VBT6/*
 /SDK/wt-nuedc/*
