@@ -2,16 +2,18 @@
 #include "main.h"
 #include <led.hpp>
 #include <mospwm.hpp>
+#include <button.hpp>
 #include "FreeRTOS.h"
 #include "task.h"
 
 using namespace std;
 void StartDefaultTask(void const *argument)
 {
-
-    PWMA.SetDuty(0.6000);
+    double DutyA = 0.500;
+    double DutyB = 0.500;
+    PWMA.SetDuty(DutyA);
     PWMA.PWM_ON();
-    PWMB.SetDuty(0.4000);
+    PWMB.SetDuty(DutyB);
     PWMB.PWM_ON();
 
     while (true) {
