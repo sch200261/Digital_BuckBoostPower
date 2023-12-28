@@ -6,7 +6,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include <sensor.hpp>
-#include <os_printf.h>
+#include "cstdio"
 
 using namespace std;
 void StartDefaultTask(void const *argument)
@@ -23,10 +23,10 @@ void StartDefaultTask(void const *argument)
     // IL_Start();
 
     while (true) {
-        // os_printf("%d %d\n", Isense_data[0], Isense_data[1]);
-        //  os_printf("%d %d\n", Vsense_data[0], Vsense_data[1]);
-        // os_printf("%d\n", cnt);
-        //  os_printf("1\n");
+        // printf("%d %d\n", Isense_data[0], Isense_data[1]);
+        // printf("%d %d\n", Vsense_data[0], Vsense_data[1]);
+        // printf("%d\n", cnt);
+        printf("1\n");
         vTaskDelay(500);
     }
 
