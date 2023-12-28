@@ -81,6 +81,8 @@ void Error_Handler(void);
 #define LCD_WR_RS_GPIO_Port GPIOD
 #define LCD_RESET_Pin GPIO_PIN_9
 #define LCD_RESET_GPIO_Port GPIOD
+#define LEDA_Pin GPIO_PIN_12
+#define LEDA_GPIO_Port GPIOD
 #define LEDG_Pin GPIO_PIN_13
 #define LEDG_GPIO_Port GPIOD
 #define LEDR_Pin GPIO_PIN_14
