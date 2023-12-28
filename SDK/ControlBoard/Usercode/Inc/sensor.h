@@ -6,6 +6,10 @@
 
 #pragma once
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "tim.h"
@@ -19,3 +23,7 @@ void ADC_Calibration(void);
 extern uint16_t Isense_data[];
 extern uint16_t Vsense_data[];
 extern uint16_t IL_data;
+
+#ifdef __cplusplus
+}
+#endif
