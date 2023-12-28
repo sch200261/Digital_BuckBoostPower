@@ -9,7 +9,7 @@
 
 uint16_t Isense_data[2];
 uint16_t Vsense_data[2];
-uint16_t IL_data[1];
+uint16_t IL_data;
 
 void Isense_Start(void)
 {
@@ -26,7 +26,7 @@ void Vsense_Start(void)
 void IL_Start(void)
 {
     HAL_TIM_Base_Start(&htim1);
-    HAL_ADC_Start_DMA(&hadc3, (uint32_t *)IL_data, 1);
+    HAL_ADC_Start_DMA(&hadc3, (uint32_t *)&IL_data, 1);
 }
 
 void ADC_Calibration(void)

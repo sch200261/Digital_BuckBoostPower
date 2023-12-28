@@ -18,4 +18,4 @@ void ADC_Calibration(void);
 
 extern uint16_t Isense_data[];
 extern uint16_t Vsense_data[];
-extern uint16_t IL_data[];
+extern uint16_t IL_data;

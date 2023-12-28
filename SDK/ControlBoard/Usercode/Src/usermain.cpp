@@ -20,13 +20,14 @@ void StartDefaultTask(void const *argument)
     ADC_Calibration();
     // Isense_Start();
     // Vsense_Start();
-    // IL_Start();
+    IL_Start();
 
     while (true) {
         // printf("%d %d\n", Isense_data[0], Isense_data[1]);
         // printf("%d %d\n", Vsense_data[0], Vsense_data[1]);
+        printf("%d\n", IL_data);
         // printf("%d\n", cnt);
-        printf("1\n");
+        // printf("1\n");
         vTaskDelay(500);
     }
 
