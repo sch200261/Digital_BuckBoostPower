@@ -39,7 +39,8 @@ public:
     {
         if (Duty > 1) { Duty = 1.000; }
         if (Duty < 0) { Duty = 0; }
-        this->Pulse = Duty * ReloadCount;
+
+        this->Pulse = (1.000 - Duty) * ReloadCount;
         __HAL_TIM_SetCompare(PWMtim, Channel, Pulse);
     }
 

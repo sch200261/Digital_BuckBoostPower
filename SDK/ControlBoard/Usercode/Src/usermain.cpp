@@ -3,7 +3,7 @@
 #include <mospwm.hpp>
 #include <button.hpp>
 #include <sensor.h>
-#include <example_stm32.h>
+
 
 #include "main.h"
 #include "FreeRTOS.h"
@@ -14,18 +14,18 @@
 using namespace std;
 void StartDefaultTask(void const *argument)
 {
-    // double DutyA = 0.500;
-    // double DutyB = 0.500;
-    // PWMA.SetDuty(DutyA);
-    // PWMA.PWM_ON();
-    // PWMB.SetDuty(DutyB);
-    // PWMB.PWM_ON();
+    double DutyA = 0.400;
+    double DutyB = 0.700;
+    PWMA.SetDuty(DutyA);
+    PWMA.PWM_ON();
+    PWMB.SetDuty(DutyB);
+    PWMB.PWM_ON();
 
     // ADC_Calibration();
     // Isense_Start();
     // Vsense_Start();
     // IL_Start();
-    example();
+    
 
     while (true) {
 
