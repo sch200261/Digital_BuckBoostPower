@@ -25,7 +25,8 @@ void StartDefaultTask(void const *argument)
     // Isense_Start();
     // Vsense_Start();
     // IL_Start();
-    LCD_Test();
+
+    // LCD_Test();
 
     while (true) {
 
