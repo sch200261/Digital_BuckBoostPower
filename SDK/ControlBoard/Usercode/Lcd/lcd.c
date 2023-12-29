@@ -22,8 +22,6 @@
 #define LCD_Brightness_timer   &htim4
 #define LCD_Brightness_channel TIM_CHANNEL_1
 
-#define Bias_Y                 24
-
 static int32_t lcd_init(void);
 static int32_t lcd_gettick(void);
 static int32_t lcd_writereg(uint8_t reg, uint8_t *pdata, uint32_t length);
@@ -48,24 +46,12 @@ void LCD_Test(void)
 {
     uint8_t text[20];
 
-#ifdef TFT96
-    ST7735Ctx.Orientation = ST7735_ORIENTATION_LANDSCAPE_ROT180;
+    ST7735Ctx.Orientation = ST7735_ORIENTATION_LANDSCAPE;
     ST7735Ctx.Panel       = HannStar_Panel;
     ST7735Ctx.Type        = ST7735_0_9_inch_screen;
-#elif TFT18
-    ST7735Ctx.Orientation = ST7735_ORIENTATION_PORTRAIT;
-    ST7735Ctx.Panel       = BOE_Panel;
-    ST7735Ctx.Type        = ST7735_1_8a_inch_screen;
-#else
-    // error "Unknown Screen"
-
-#endif
-
-    ST7735Ctx.Orientation = ST7735_ORIENTATION_LANDSCAPE;
     ST7735_RegisterBusIO(&st7735_pObj, &st7735_pIO);
     ST7735_LCD_Driver.Init(&st7735_pObj, ST7735_FORMAT_RBG565, &ST7735Ctx);
     ST7735_LCD_Driver.ReadID(&st7735_pObj, &st7735_id);
-
     LCD_SetBrightness(1199);
 
 #ifdef TFT96
@@ -78,11 +64,11 @@ void LCD_Test(void)
 
     ST7735_LCD_Driver.FillRect(&st7735_pObj, 0, 0, ST7735Ctx.Width, ST7735Ctx.Height, BLACK);
     sprintf((char *)&text, "STM32H7xx 0x%X", HAL_GetDEVID());
-    LCD_ShowString(0, 0 + Bias_Y, ST7735Ctx.Width, 16, 16, text);
+    LCD_ShowString(0, 0, ST7735Ctx.Width, 16, 16, text);
     sprintf((char *)&text, "LCD ID:0x%X", st7735_id);
-    LCD_ShowString(0, 16 + Bias_Y, ST7735Ctx.Width, 16, 16, text);
+    LCD_ShowString(0, 16, ST7735Ctx.Width, 16, 16, text);
     sprintf((char *)&text, "Hello world");
-    LCD_ShowString(0, 32 + Bias_Y, ST7735Ctx.Width, 16, 16, text);
+    LCD_ShowString(0, 32, ST7735Ctx.Width, 16, 16, text);
 }
 
 void LCD_SetBrightness(uint32_t Brightness)
@@ -332,3 +318,51 @@ static int32_t lcd_recvdata(uint8_t *pdata, uint32_t length)
     }
     return result;
 }
+
+void LCD_Start(void)
+{
+    uint8_t text[20];
+
+    ST7735Ctx.Orientation = ST7735_ORIENTATION_LANDSCAPE;
+    ST7735Ctx.Panel       = HannStar_Panel;
+    ST7735Ctx.Type        = ST7735_0_9_inch_screen;
+    ST7735_RegisterBusIO(&st7735_pObj, &st7735_pIO);
+    ST7735_LCD_Driver.Init(&st7735_pObj, ST7735_FORMAT_RBG565, &ST7735Ctx);
+    ST7735_LCD_Driver.ReadID(&st7735_pObj, &st7735_id);
+    LCD_SetBrightness(0);
+
+    POINT_COLOR = BLACK;
+    BACK_COLOR  = WHITE;
+    ST7735_LCD_Driver.FillRect(&st7735_pObj, 0, 0, ST7735Ctx.Width, ST7735Ctx.Height, BACK_COLOR);
+
+    sprintf((char *)&text, "DigitalBuckBoost");
+    LCD_ShowString(4, 2, ST7735Ctx.Width, 16, 16, text);
+    sprintf((char *)&text, "STM32H743 0x%X", HAL_GetDEVID());
+    LCD_ShowString(4, 28, ST7735Ctx.Width, 12, 12, text);
+    sprintf((char *)&text, "LCD ID:0x%X", st7735_id);
+    LCD_ShowString(4, 42, ST7735Ctx.Width, 12, 12, text);
+
+    // sprintf((char *)&text, "Press OK to start");
+    // LCD_ShowString(2, 56, ST7735Ctx.Width, 16, 16, text);
+
+    sprintf((char *)&text, "Designed by Chuhan");
+    LCD_ShowString(2, 56, ST7735Ctx.Width, 16, 16, text);
+
+    LCD_Light(1199, 3000);
+}
+
+// void LCD_Showinfo(void)
+// {
+//     uint8_t text[20];
+
+//     sprintf((char *)&text, "IN:  %.3fV %.3fA", (double)Vsense_data[0] * 0.0011444077210651, (double)(Isense_data[0]-32767) * 0.0007193538894156885);
+//     LCD_ShowString(4, 2, ST7735Ctx.Width, 16, 16, text);
+//     sprintf((char *)&text, "OUT: %.3fV %.3fA", (double)Vsense_data[1] * 0.0011444077210651, (double)(Isense_data[1]-32767) * 0.0007193538894156885);
+//     LCD_ShowString(4, 20, ST7735Ctx.Width, 16, 16, text);
+
+//     sprintf((char *)&text, "IL:%.2fA", (double)(IL_data[0]-32767) * 0.0007193538894156885);
+//     LCD_ShowString(4, 38, ST7735Ctx.Width, 16, 16, text);
+
+//     sprintf((char *)&text, "Temp: %ld Celsius", __HAL_ADC_CALC_TEMPERATURE(3300, IL_data[1], ADC_RESOLUTION_16B));
+//     LCD_ShowString(4, 54, ST7735Ctx.Width, 16, 16, text);
+// }

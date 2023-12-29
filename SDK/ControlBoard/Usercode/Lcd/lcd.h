@@ -7,6 +7,7 @@ extern "C" {
 #include "main.h"
 #include "st7735.h"
 #include <stdio.h>
+#include <sensor.h>
 
 #define WHITE     0xFFFF
 #define BLACK     0x0000
@@ -39,6 +40,9 @@ void LCD_Light(uint32_t Brightness_Dis, uint32_t time);
 void LCD_ShowChar(uint16_t x, uint16_t y, uint8_t num, uint8_t size, uint8_t mode);
 void LCD_ShowString(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint8_t size, uint8_t *p);
 extern ST7735_Ctx_t ST7735Ctx;
+
+void LCD_Start(void);
+void LCD_Showinfo(void);
 
 #ifdef __cplusplus
 }

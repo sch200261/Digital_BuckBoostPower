@@ -1,7 +1,7 @@
 
-**** 12/17/23 23:11:54 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 12/30/23 04:08:54 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-opa_test"  [ C:\Users\sch\Desktop\NewFinal\Simulation\OPA_test\opa_design-pspicefiles\schematic1\opa_test.si
+ ** Profile: "SCHEMATIC1-opa_test"  [ C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design-pspic
 
 
  ****     CIRCUIT DESCRIPTION
@@ -38,7 +38,7 @@ R_R3         N00951 N01083  75k TC=0,0
 R_R4         N00951 0  3.3k TC=0,0 
 R_R5         N00955 N01079  75k TC=0,0 
 R_R6         N01022 N00955  3.3k TC=0,0 
-V_V2         N01083 N01079 72VDC
+V_V2         N01083 N01079 60VDC
 E_U3         1V65 0 VALUE {LIMIT(V(N00270,1V65)*1E6,0V,5V)}
 E_U4         N01022 0 VALUE {LIMIT(V(N00951,N00955)*1E6,0V,5V)}
 
@@ -48,9 +48,9 @@ E_U4         N01022 0 VALUE {LIMIT(V(N00951,N00955)*1E6,0V,5V)}
 
           JOB CONCLUDED
 
-**** 12/17/23 23:11:54 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 12/30/23 04:08:54 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-opa_test"  [ C:\Users\sch\Desktop\NewFinal\Simulation\OPA_test\opa_design-pspicefiles\schematic1\opa_test.si
+ ** Profile: "SCHEMATIC1-opa_test"  [ C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design-pspic
 
 
  ****     JOB STATISTICS SUMMARY
@@ -60,5 +60,5 @@ E_U4         N01022 0 VALUE {LIMIT(V(N00951,N00955)*1E6,0V,5V)}
 
 
 
-  Total job time (using Solver 1)   =         .02
+  Total job time (using Solver 1)   =         .06
 

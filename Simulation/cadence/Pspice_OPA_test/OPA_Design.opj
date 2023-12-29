@@ -1,6 +1,6 @@
 (ExpressProject "OPA_Design"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1 S001 (4155653)  [11/15/2023]-[12/08/23]")
+  (SoftwareVersion "23.1 S001 (4155653)  [11/15/2023]-[12/30/23]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -65,26 +65,27 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\sch\Desktop\NewFinal\Simulation\OPA_test\opa_design.dsn")
+         "C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design.dsn")
       (Path "Design Resources"
-         "C:\Users\sch\Desktop\NewFinal\Simulation\OPA_test\opa_design.dsn"
+         "C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design.dsn"
          "SCHEMATIC1")
       (Select "Design Resources"
-         "C:\Users\sch\Desktop\NewFinal\Simulation\OPA_test\opa_design.dsn"
+         "C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 2511 0 1089"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 1594 0 496"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 2520 28 1121")
-        (Scroll "-543 -12")
-        (Zoom "144")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1603 28 528")
+        (Scroll "0 657")
+        (Zoom "168")
         (Occurrence "/"))
-      (Path "C:\USERS\SCH\DESKTOP\NEWFINAL\SIMULATION\OPA_TEST\OPA_DESIGN.DSN")
+      (Path
+         "C:\USERS\SCH\DESKTOP\DIGITAL_BUCKBOOSTPOWER\SIMULATION\CADENCE\PSPICE_OPA_TEST\OPA_DESIGN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))

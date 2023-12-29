@@ -398,7 +398,7 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"72VDC")
+                    ("value"	"60VDC")
                     ("pspice_param"	"DC")
                 )
                 ("PSpice Model Type"
