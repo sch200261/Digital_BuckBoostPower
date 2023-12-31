@@ -1,15 +1,4 @@
-#include <usermain.h>
-#include <led.hpp>
-#include <mospwm.hpp>
-#include <button.hpp>
-#include <sensor.h>
-#include <lcd.h>
-
-#include "main.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "cstdio"
-#include <adc.h>
+#include <usermain.hpp>
 
 using namespace std;
 void StartDefaultTask(void const *argument)
@@ -21,12 +10,12 @@ void StartDefaultTask(void const *argument)
     // PWMB.SetDuty(DutyB);
     // PWMB.PWM_ON();
 
-    ADC_Calibration();
-    Isense_Start();
-    Vsense_Start();
-    IL_Start();
+    // ADC_Calibration();
+    // Isamping_Start();
+    // Vsamping_Start();
+    // IL_Start();
 
-    LCD_Start();
+    // LCD_Start();
 
     while (true) {
 
