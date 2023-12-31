@@ -1,7 +1,7 @@
 /********************************************************************************
- * @file    userdata.cpp
+ * @file    userdata.c
  * @brief   This file saves all configration and data for the power.
  *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include <userdata.hpp>
+#include <userdata.h>
