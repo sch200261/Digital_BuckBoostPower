@@ -18,19 +18,12 @@ using namespace std;
 
 void StartDefaultTask(void const *argument)
 {
-    // double DutyA = 0.400;
-    // double DutyB = 0.700;
-    // PWMA.SetDuty(DutyA);
-    // PWMA.PWM_ON();
-    // PWMB.SetDuty(DutyB);
-    // PWMB.PWM_ON();
-
-    // ADC_Calibration();
-    // Isamping_Start();
-    // Vsamping_Start();
-    // IL_Start();
-
-    // LCD_Start();
+    double DutyA = 0.200;
+    double DutyB = 0.800;
+    PWMA.SetDuty(DutyA);
+    PWMA.PWM_ON();
+    PWMB.SetDuty(DutyB);
+    PWMB.PWM_ON();
 
     while (true) {
 
