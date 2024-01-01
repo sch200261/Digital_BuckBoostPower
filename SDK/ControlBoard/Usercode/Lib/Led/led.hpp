@@ -6,10 +6,21 @@
 
 #pragma once
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "tim.h"
+/* Includes End --------------------------------------------------------------*/
 
+/* Variables -----------------------------------------------------------------*/
+/* Variables End -------------------------------------------------------------*/
+
+/* Class ---------------------------------------------------------------------*/
+
+/// @brief 颜色类
 class Color
 {
 public:
@@ -21,6 +32,7 @@ public:
         : R(R), G(G), B(B){};
 };
 
+/// @brief LED类
 class Led
 {
 private:
@@ -113,8 +125,16 @@ public:
 };
 
 extern Led LedMain;
-
 extern Color ColorError;
 extern Color ColorNormal;
 extern Color ColorInit;
 extern Color ColorWarning;
+
+/* Class End -----------------------------------------------------------------*/
+
+/* Function ------------------------------------------------------------------*/
+/* Function End --------------------------------------------------------------*/
+
+#ifdef __cplusplus
+}
+#endif

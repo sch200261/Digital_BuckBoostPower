@@ -91,11 +91,12 @@
           "Drivers/CMSIS/Include",
           "Core/ThreadSafe",
           "Usercode/Inc",
-          "Usercode/Lcd",
-          "Usercode/freertos_io",
-          "Usercode/stdio_retarget",
-          "Usercode",
-          "Usercode/FreeRtosSys"
+          "Usercode/Lib/ADC",
+          "Usercode/Lib/Button",
+          "Usercode/Lib/Lcd",
+          "Usercode/Lib/Led",
+          "Usercode/Lib/PWM",
+          "Usercode/Lib/Usart"
         ],
         "libList": [],
         "sourceDirList": [],
