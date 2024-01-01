@@ -6,10 +6,6 @@
 
 #pragma once
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "tim.h"
@@ -83,7 +79,3 @@ extern CoPWM PWMB;
 
 /* Function ------------------------------------------------------------------*/
 /* Function End --------------------------------------------------------------*/
-
-#ifdef __cplusplus
-}
-#endif

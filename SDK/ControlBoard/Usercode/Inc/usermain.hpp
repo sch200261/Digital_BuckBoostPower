@@ -6,10 +6,6 @@
 
 #pragma once
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /* Includes ------------------------------------------------------------------*/
 #include <led.hpp>
 #include <mospwm.hpp>
@@ -37,7 +33,3 @@ extern "C" {
 void StartDefaultTask(void const *argument);
 
 /* Function End --------------------------------------------------------------*/
-
-#ifdef __cplusplus
-}
-#endif

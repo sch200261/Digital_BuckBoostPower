@@ -6,10 +6,6 @@
 
 #pragma once
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "tim.h"
@@ -134,7 +130,3 @@ extern Color ColorWarning;
 
 /* Function ------------------------------------------------------------------*/
 /* Function End --------------------------------------------------------------*/
-
-#ifdef __cplusplus
-}
-#endif
