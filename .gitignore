@@ -7,11 +7,15 @@
 *.zip
 
 /HDK/DBBC_7205_Single/__Previews/*
-/HDK/DBBC_7205_Single/Project Logs for DigiBuckBoostConverter/*
-/HDK/DBBC_7205_Single/Project Outputs for DigiBuckBoostConverter/*
+/HDK/DBBC_7205_Single/Project Logs for DigiBuckBoost_Single/*
+/HDK/DBBC_7205_Single/Project Outputs for DigiBuckBoost_Single/*
 /HDK/DBBC_7205_Single/PDNAnalyzer3_Output/*
+/HDK/DBBC_7205_Single/History/*
+
 
 /HDK/DBBC_7205_Twin/__Previews/*
 /HDK/DBBC_7205_Twin/Project Logs for DigiBuckBoostConverter/*
 /HDK/DBBC_7205_Twin/Project Outputs for DigiBuckBoostConverter/*
 /HDK/DBBC_7205_Twin/PDNAnalyzer3_Output/*
+/HDK/DBBC_7205_Twin/History/*
+
