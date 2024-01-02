@@ -1,10 +1,17 @@
 /********************************************************************************
- * @file    userdata.c
- * @brief   This file saves all configration and data for the power.
+ * @file    canbus.h
+ * @brief   This file contains all the function prototypes for
+ *          the canbus.c file.
  *******************************************************************************/
 
+#pragma once
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Includes ------------------------------------------------------------------*/
-#include <userdata.h>
+#include "main.h"
 /* Includes End --------------------------------------------------------------*/
 
 /* Typedef -------------------------------------------------------------------*/
@@ -21,3 +28,7 @@
 
 /* Function ------------------------------------------------------------------*/
 /* Function End --------------------------------------------------------------*/
+
+#ifdef __cplusplus
+}
+#endif

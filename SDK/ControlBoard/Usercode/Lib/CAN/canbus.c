@@ -1,10 +1,11 @@
 /********************************************************************************
- * @file    userdata.c
- * @brief   This file saves all configration and data for the power.
+ * @file    canbus.c
+ * @brief   This file provides code for the configuration
+ *          of canbus.
  *******************************************************************************/
 
 /* Includes ------------------------------------------------------------------*/
-#include <userdata.h>
+#include <canbus.h>
 /* Includes End --------------------------------------------------------------*/
 
 /* Typedef -------------------------------------------------------------------*/
