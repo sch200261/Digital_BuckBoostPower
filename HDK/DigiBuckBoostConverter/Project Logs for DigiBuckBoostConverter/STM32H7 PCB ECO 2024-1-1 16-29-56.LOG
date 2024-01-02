@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=PWMAL Pin=R42-2
-Removed Pin From Net: NetName=PWMAH Pin=R43-2
-Removed Pin From Net: NetName=PWMBL Pin=R44-2
-Removed Pin From Net: NetName=PWMBH Pin=R45-2
-Added Pin To Net: NetName=PWMAH Pin=R42-2
-Added Pin To Net: NetName=PWMAL Pin=R43-2
-Added Pin To Net: NetName=PWMBH Pin=R44-2
-Added Pin To Net: NetName=PWMBL Pin=R45-2
