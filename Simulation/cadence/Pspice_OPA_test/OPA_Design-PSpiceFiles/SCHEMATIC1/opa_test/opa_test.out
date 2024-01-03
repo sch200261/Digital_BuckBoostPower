@@ -1,5 +1,5 @@
 
-**** 12/30/23 04:08:54 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 01/03/24 19:22:48 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-opa_test"  [ C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design-pspic
 
@@ -18,7 +18,7 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-* From [PSPICE NETLIST] section of C:\Users\sch\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of E:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
 .lib "nom.lib" 
 
 *Analysis directives: 
@@ -48,7 +48,7 @@ E_U4         N01022 0 VALUE {LIMIT(V(N00951,N00955)*1E6,0V,5V)}
 
           JOB CONCLUDED
 
-**** 12/30/23 04:08:54 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
+**** 01/03/24 19:22:48 *** PSpice 23.1.0 (15 November 2023) *** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-opa_test"  [ C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design-pspic
 

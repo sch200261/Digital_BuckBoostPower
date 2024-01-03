@@ -76,13 +76,13 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 1594 0 496"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 2511 0 1097"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1603 28 528")
-        (Scroll "0 657")
+        (Placement "44 0 1 -1 -1 -1 -1 5 2520 28 1129")
+        (Scroll "-426 131")
         (Zoom "168")
         (Occurrence "/"))
       (Path
