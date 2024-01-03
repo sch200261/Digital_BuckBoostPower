@@ -15,6 +15,8 @@
 /* Typedef End ---------------------------------------------------------------*/
 
 /* Define --------------------------------------------------------------------*/
+#define CURRENT_SENSOR_R 0.0025
+#define VOLTAGE_SENSOR_R 75.000
 /* Define End ----------------------------------------------------------------*/
 
 /* Macro ---------------------------------------------------------------------*/
@@ -40,7 +42,7 @@ public:
     /// @param  void
     void Convert_RealValue(void)
     {
-        RealValue = *ptrData * 75.000 / 65535.000;
+        RealValue = *ptrData * VOLTAGE_SENSOR_R / 65535.000;
     }
 
     /// @brief 将ADC原始数据转换为浮点值（带线性校准），应在ADC转换回调函数中使用
@@ -48,7 +50,7 @@ public:
     /// @param _b 线性校准的截距
     void Convert_RealValue_Line_cali(double _k, double _b)
     {
-        RealValue = *ptrData * 75.000 / 65535.000 * _k + _b;
+        RealValue = *ptrData * VOLTAGE_SENSOR_R / 65535.000 * _k + _b;
     }
 };
 
@@ -67,7 +69,7 @@ public:
     /// @param  void
     void Convert_RealValue(void)
     {
-        RealValue = (*ptrData - 32767.5) * 3.300 / 4587.450;
+        RealValue = (*ptrData / 65535.0 - 0.5000) * 0.165 / CURRENT_SENSOR_R;
     }
 
     /// @brief 将ADC原始数据转换为浮点值（带线性校准），应在ADC转换回调函数中使用
@@ -75,7 +77,7 @@ public:
     /// @param _b 线性校准的截距
     void Convert_RealValue_Line_cali(double _k, double _b)
     {
-        RealValue = (*ptrData - 32767.5) * 3.300 / 4587.450 * _k + _b;
+        RealValue = ((*ptrData / 65535.0 - 0.5000) * 0.165 / CURRENT_SENSOR_R) * _k + _b;
     }
 };
 
