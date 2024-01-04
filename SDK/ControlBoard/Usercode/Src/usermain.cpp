@@ -39,9 +39,9 @@ void StartDefaultTask(void const *argument)
     vTaskDelay(1);
 
     while (true) {
-        printf("Vin:%lfV  Vout:%lfV  Iin:%lfA  Iout:%lfA  IL: %lfA\n", Vin.RealValue, Vout.RealValue, Iin.RealValue, Iout.RealValue, IL.RealValue);
+        // printf("Vin:%lfV  Vout:%lfV  Iin:%lfA  Iout:%lfA  IL: %lfA\n", Vin.RealValue, Vout.RealValue, Iin.RealValue, Iout.RealValue, IL.RealValue);
         printf("Vin:%d  Vout:%d  Iin:%d  Iout:%d  IL: %d\n", Voltage_data[0], Voltage_data[1], Current_data[0], Current_data[1], IL_data[0]);
-        vTaskDelay(500);
+        vTaskDelay(100);
     }
 
     vTaskDelete(nullptr);
