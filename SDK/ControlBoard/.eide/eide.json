@@ -97,7 +97,8 @@
           "Usercode/Lib/Led",
           "Usercode/Lib/PWM",
           "Usercode/Lib/Usart",
-          "Usercode/Lib/CAN"
+          "Usercode/Lib/CAN",
+          "Usercode/Lib/Control_system"
         ],
         "libList": [],
         "sourceDirList": [],
