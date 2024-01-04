@@ -57,22 +57,12 @@
 void SystemClock_Config(void);
 void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
-// uint32_t cnt = 0;
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-// void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
-// {
-//     /* Prevent unused argument(s) compilation warning */
-//     if (hadc == &hadc2) {
-//         cnt++;
-//     }
 
-//     /* NOTE : This function should not be modified. When the callback is needed,
-//               function HAL_ADC_ConvCpltCallback must be implemented in the user file.
-//      */
-// }
 /* USER CODE END 0 */
 
 /**
