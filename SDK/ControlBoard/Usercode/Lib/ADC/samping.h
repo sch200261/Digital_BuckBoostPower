@@ -50,8 +50,11 @@ void Voltage_samping_Start(void);
 /// @param  void 无
 void IL_samping_Start(void);
 
-/// @brief 启动ADC偏差校准
-/// @param  void 无
+/// @brief 启动ADC偏差线性校准
+/// @param @ref Cail_ADC1   校准ADC1
+/// @param @ref Cail_ADC2   校准ADC2
+/// @param @ref Cail_ADC3   校准ADC3
+/// @param @ref Cail_ADCALL 校准ADCALL
 void ADC_Calibration(enum Calibration_Type Type);
 
 /* Function End --------------------------------------------------------------*/
