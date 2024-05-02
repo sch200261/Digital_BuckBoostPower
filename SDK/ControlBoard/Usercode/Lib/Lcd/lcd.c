@@ -323,7 +323,7 @@ void LCD_Start(void)
 {
     uint8_t text[20];
 
-    ST7735Ctx.Orientation = ST7735_ORIENTATION_LANDSCAPE;
+    ST7735Ctx.Orientation = ST7735_ORIENTATION_LANDSCAPE_ROT180;
     ST7735Ctx.Panel       = HannStar_Panel;
     ST7735Ctx.Type        = ST7735_0_9_inch_screen;
     ST7735_RegisterBusIO(&st7735_pObj, &st7735_pIO);
@@ -350,4 +350,3 @@ void LCD_Start(void)
 
     LCD_Light(1199, 3000);
 }
-

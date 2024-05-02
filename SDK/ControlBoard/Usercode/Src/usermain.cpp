@@ -24,7 +24,7 @@ void StartDefaultTask(void const *argument)
 
     // PWM测试
     double DutyA = 0.500;
-    double DutyB = 1.000;
+    double DutyB = 0.900;
     PWMA.SetDuty(DutyA);
     PWMB.SetDuty(DutyB);
     PWMB.PWM_ON();
