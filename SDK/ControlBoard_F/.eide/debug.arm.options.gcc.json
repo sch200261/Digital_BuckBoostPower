@@ -1,0 +1,26 @@
+{
+    "version": 5,
+    "beforeBuildTasks": [],
+    "afterBuildTasks": [],
+    "global": {
+        "$float-abi-type": "hard",
+        "output-debug-info": "enable",
+        "misc-control": "-pipe -fno-exceptions --specs=nano.specs -u _printf_float -u _scanf_float"
+    },
+    "c/cpp-compiler": {
+        "language-c": "gnu11",
+        "language-cpp": "gnu++17",
+        "optimization": "level-debug",
+        "warnings": "all-warnings",
+        "one-elf-section-per-function": true,
+        "one-elf-section-per-data": true,
+        "CXX_FLAGS": "-fno-rtti -Wno-psabi"
+    },
+    "asm-compiler": {},
+    "linker": {
+        "output-format": "elf",
+        "remove-unused-input-sections": true,
+        "LIB_FLAGS": "-lm -lstdc++",
+        "$toolName": "auto"
+    }
+}
