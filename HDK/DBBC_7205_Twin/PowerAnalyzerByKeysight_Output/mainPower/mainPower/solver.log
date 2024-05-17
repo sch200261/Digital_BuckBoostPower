@@ -1,4 +1,4 @@
-Started on Mon Mar  4 16:11:31 2024
+Started on Mon May  6 07:37:44 2024
 
 emprvem: v1.0.0
 Invoking vmesh...
@@ -27,13 +27,13 @@ Generated:
 Invoking VemEngine...
 
 
-Starting the DC solver at Mon Mar  4 16:11:33 2024
+Starting the DC solver at Mon May  6 07:37:46 2024
 
 Creating the DC design
 
 ..parsing the options file 
 
-..using NUMBER_OF_PROCESSORS = 12
+..using NUMBER_OF_PROCESSORS = 20
 
 ..parsing the layout file 
 
@@ -83,18 +83,18 @@ Electric N-port analysis
 
 DC solver resources
 
-..elapsed time: 2.7 s
+..elapsed time: 2.9 s
 
-..user time: 12.0 s
+..user time: 19.2 s
 
-..physical memory: 393 MB
+..physical memory: 422 MB
 
-..virtual memory: 566 MB
+..virtual memory: 790 MB
 
 
 
-Finished on Mon Mar  4 16:11:36 2024
+Finished on Mon May  6 07:37:49 2024
 
-Total Elapsed Time : 5.26031s
+Total Elapsed Time : 5.24346s
 
 

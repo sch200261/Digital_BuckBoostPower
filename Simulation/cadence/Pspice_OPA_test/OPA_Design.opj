@@ -63,15 +63,7 @@
   (MPSSessionName "sch")
   (GlobalState
     (FileView
-      (Path "Design Resources")
-      (Path "Design Resources"
-         "C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design.dsn")
-      (Path "Design Resources"
-         "C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design.dsn"
-         "SCHEMATIC1")
-      (Select "Design Resources"
-         "C:\Users\sch\Desktop\Digital_BuckBoostPower\Simulation\cadence\Pspice_OPA_test\opa_design.dsn"
-         "SCHEMATIC1" "PAGE1"))
+      (Path "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -81,8 +73,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 2520 28 1129")
-        (Scroll "-426 131")
+        (Placement "44 0 1 -1 -1 -1 -1 5 2314 28 1129")
+        (Scroll "-323 72")
         (Zoom "168")
         (Occurrence "/"))
       (Path

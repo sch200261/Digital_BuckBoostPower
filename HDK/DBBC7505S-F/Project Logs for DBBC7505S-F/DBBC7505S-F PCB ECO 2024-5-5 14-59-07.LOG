@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=CAN_TX Pin=U9-E8
+Added Component: Designator=R24(R0402)
+Add component (AddParameter): Name = "BOM_JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Manufacturer"; Value = "YAGEO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Manufacturer Part"; Value = "SR0402FR-0710KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Supplier Part"; Value = "C723595"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contributor"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "10k¦¸"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "spicePre"; Value = "R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "spiceSymbolName"; Value = "SR0402FR-0710KL"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CAN_TX Pin=R24-2
+Added Pin To Net: NetName=NetR24_1 Pin=R24-1
+Added Pin To Net: NetName=NetR24_1 Pin=U9-E8
+Added Net: Name=NetR24_1
+Added Member To Class: ClassName=DBBC7505S-F Member=Component R24 10 ohm

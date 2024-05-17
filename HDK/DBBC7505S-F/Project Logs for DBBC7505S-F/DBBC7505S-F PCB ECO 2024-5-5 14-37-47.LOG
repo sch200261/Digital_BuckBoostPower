@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetC58_2 Pin=R39-1
+Removed Pin From Net: NetName=CANH Pin=SW1-1
+Removed Member From Class: ClassName=DBBC7505S-F Member=SW1
+Added Component: Designator=H3(HDR2.54-LI-2P)
+Add component (AddParameter): Name = "BOM_JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Manufacturer"; Value = "BOOMELE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Manufacturer Part"; Value = "Header2.54mm 1*3P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "BOM_Supplier Part"; Value = "C49257"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "spicePre"; Value = "H"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "spiceSymbolName"; Value = "Header-Male-2.54_1x3"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC58_2 Pin=H3-2
+Added Pin To Net: NetName=CANH Pin=R40-2
+Added Pin To Net: NetName=NetH3_1 Pin=H3-1
+Added Pin To Net: NetName=NetH3_1 Pin=R39-1
+Added Net: Name=NetH3_1
+Added Member To Class: ClassName=DBBC7505S-F Member=Component H3 Header-Male-2.54_1x2

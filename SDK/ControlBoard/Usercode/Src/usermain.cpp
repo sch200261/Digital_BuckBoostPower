@@ -19,7 +19,7 @@ using namespace std;
 void StartDefaultTask(void const *argument)
 {
     // LED测试
-    LedMain.SetColor(ColorNormal);
+    LedMain.SetColor(ColorInit);
     LedMain.LED_ON();
 
     // PWM测试
@@ -27,18 +27,18 @@ void StartDefaultTask(void const *argument)
     double DutyB = 0.900;
     PWMA.SetDuty(DutyA);
     PWMB.SetDuty(DutyB);
-    PWMB.PWM_ON();
     PWMA.PWM_ON();
+    PWMB.PWM_ON();
     vTaskDelay(1);
 
     // ADC测试
-    // ADC_Trigger_TIM_Base_Start();
-    // ADC_Calibration(Cail_ADCALL);
-    // vTaskDelay(10);
-    // Current_samping_Start();
-    // Voltage_samping_Start();
-    // IL_samping_Start();
-    // vTaskDelay(1);
+    ADC_Trigger_TIM_Base_Start();
+    ADC_Calibration(Cail_ADCALL);
+    vTaskDelay(10);
+    Current_samping_Start();
+    Voltage_samping_Start();
+    IL_samping_Start();
+    vTaskDelay(1);
 
     // LCD测试
     LCD_Start();

@@ -1,8 +1,8 @@
 
-Starting the DC solver at Mon Mar  4 16:11:33 2024
+Starting the DC solver at Mon May  6 07:37:46 2024
 Creating the DC design
 ..parsing the options file 
-..using NUMBER_OF_PROCESSORS = 12
+..using NUMBER_OF_PROCESSORS = 20
 ..parsing the layout file 
 ..parsing the stimulus file 
 ..extracting the connectivity 
@@ -27,8 +27,8 @@ Electric N-port analysis
 .........|.........|.........|.........|
 ..writing the model file
 DC solver resources
-..elapsed time: 2.7 s
-..user time: 12.0 s
-..physical memory: 393 MB
-..virtual memory: 566 MB
+..elapsed time: 2.9 s
+..user time: 19.2 s
+..physical memory: 422 MB
+..virtual memory: 790 MB
 

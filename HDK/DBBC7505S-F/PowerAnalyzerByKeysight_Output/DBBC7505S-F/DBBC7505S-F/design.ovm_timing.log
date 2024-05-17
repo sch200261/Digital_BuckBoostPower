@@ -1,0 +1,34 @@
+Generating Mesh	6.71858
+Generating Mesh\Assigning Materials 	1.0873
+Generating Mesh\Reading Design 	1.92922
+Generating Mesh\Reading Design \Reading Design	0.752199
+Generating Mesh\Reading Design \Reading Design\Do Smart Slicing	0.0036538
+Generating Mesh\Reading Design \Reading Design\Simplifying Design	0.680528
+Generating Mesh\Refining Surface Mesh	2.55652
+Generating Mesh\Refining Surface Mesh\Checking via	0.0008194
+Generating Mesh\Refining Surface Mesh\Convert Local Mesh to Global Mesh	0.205809
+Generating Mesh\Refining Surface Mesh\Detecting Connectivity Problems	0.0547221
+Generating Mesh\Refining Surface Mesh\Insert pins MT	0.217146
+Generating Mesh\Refining Surface Mesh\Locating Pins	0.114853
+Generating Mesh\Refining Surface Mesh\Locating Pins\Locating instances on layers	0.0980186
+Generating Mesh\Refining Surface Mesh\Locating Pins\Locating pins on layers	0.0168132
+Generating Mesh\Refining Surface Mesh\Looking for Electrically Isolated Patches 	0.147578
+Generating Mesh\Refining Surface Mesh\Mark electrical interconnects	0.183683
+Generating Mesh\Refining Surface Mesh\Marking Degenerate Elements	0.0313728
+Generating Mesh\Refining Surface Mesh\Marking Vias	0.0641374
+Generating Mesh\Refining Surface Mesh\Marking thickness for non-circular vias	0.0041148
+Generating Mesh\Refining Surface Mesh\Pruning Surface Mesh 	0.146571
+Generating Mesh\Refining Surface Mesh\Recovering surface attributes 	0.0182846
+Generating Mesh\Refining Surface Mesh\Writing ASCII surface mesh file 	1.08249
+Generating Mesh\Refining Surface Mesh\Writing BINARY surface mesh file 	0.0708087
+Generating Mesh\SurfaceMesher	1.1279
+Generating Mesh\SurfaceMesher\Generating surface mesh 	1.08142
+Generating Mesh\SurfaceMesher\Generating surface mesh \Checking surface mesh consistency	0.0476215
+Generating Mesh\SurfaceMesher\Generating surface mesh \Computing Aabbs	0.0142807
+Generating Mesh\SurfaceMesher\Generating surface mesh \Convert Global Mesh into Local Meshes	0.15545
+Generating Mesh\SurfaceMesher\Generating surface mesh \Convert Global Mesh into Local Meshes\Stabilizing mesh	0.0002368
+Generating Mesh\SurfaceMesher\Generating surface mesh \Faceting	0.820947
+Generating Mesh\SurfaceMesher\Generating surface mesh \Faceting\1D faceting	0.446154
+Generating Mesh\SurfaceMesher\Generating surface mesh \Faceting\1D faceting\1D meshing	0.370983
+Generating Mesh\SurfaceMesher\Generating surface mesh \Faceting\2D faceting	0.333157
+Generating Mesh\SurfaceMesher\Generating surface mesh \Faceting\2D faceting\2D meshing	0.333149
