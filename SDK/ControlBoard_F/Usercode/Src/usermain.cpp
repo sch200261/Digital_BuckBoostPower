@@ -1,18 +1,12 @@
 /********************************************************************************
- * @file    usermain.hpp
- * @brief   This file contains all the function prototypes for
- *          the usermain.cpp file
+ * @file    usermain.cpp
+ * @brief   This file provides code for the configuration
+ *          of usermain.
  *******************************************************************************/
-
-#pragma once
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
+using namespace std;
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
-
+#include <usermain.hpp>
+#include <cstdio>
 /* Includes End --------------------------------------------------------------*/
 
 /* Variables -----------------------------------------------------------------*/
@@ -23,10 +17,13 @@ extern "C" {
 
 /* Function ------------------------------------------------------------------*/
 
-void Usermain();
+void Usermain()
+{
+
+    while (1) {
+        printf("aaa\n");
+        HAL_Delay(1);
+    }
+}
 
 /* Function End --------------------------------------------------------------*/
-
-#ifdef __cplusplus
-}
-#endif
