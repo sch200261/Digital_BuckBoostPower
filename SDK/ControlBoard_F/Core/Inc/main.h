@@ -57,24 +57,48 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LEDB_Pin GPIO_PIN_9
+#define LEDB_GPIO_Port GPIOB
+#define LEDG_Pin GPIO_PIN_7
+#define LEDG_GPIO_Port GPIOB
+#define Key2_Pin GPIO_PIN_4
+#define Key2_GPIO_Port GPIOB
+#define Key3_Pin GPIO_PIN_3
+#define Key3_GPIO_Port GPIOB
+#define LEDR_Pin GPIO_PIN_8
+#define LEDR_GPIO_Port GPIOB
+#define Key1_Pin GPIO_PIN_5
+#define Key1_GPIO_Port GPIOD
 #define Vin_Pin GPIO_PIN_0
 #define Vin_GPIO_Port GPIOC
 #define Vout_Pin GPIO_PIN_1
 #define Vout_GPIO_Port GPIOC
 #define IL_Pin GPIO_PIN_3
 #define IL_GPIO_Port GPIOC
+#define LCD_BK_Pin GPIO_PIN_6
+#define LCD_BK_GPIO_Port GPIOC
 #define PWMBL_Pin GPIO_PIN_10
 #define PWMBL_GPIO_Port GPIOE
+#define LCD_SDA_Pin GPIO_PIN_15
+#define LCD_SDA_GPIO_Port GPIOB
 #define PWMBH_Pin GPIO_PIN_11
 #define PWMBH_GPIO_Port GPIOE
 #define Iin_Pin GPIO_PIN_2
 #define Iin_GPIO_Port GPIOA
 #define PWMAL_Pin GPIO_PIN_8
 #define PWMAL_GPIO_Port GPIOE
+#define LCD_SCL_Pin GPIO_PIN_13
+#define LCD_SCL_GPIO_Port GPIOB
+#define LCD_RESET_Pin GPIO_PIN_13
+#define LCD_RESET_GPIO_Port GPIOD
 #define Iout_Pin GPIO_PIN_3
 #define Iout_GPIO_Port GPIOA
 #define PWMAH_Pin GPIO_PIN_9
 #define PWMAH_GPIO_Port GPIOE
+#define LCD_CS_Pin GPIO_PIN_11
+#define LCD_CS_GPIO_Port GPIOB
+#define LCD_WR_RS_Pin GPIO_PIN_12
+#define LCD_WR_RS_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 

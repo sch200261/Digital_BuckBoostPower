@@ -85,7 +85,12 @@
           "Drivers/CMSIS/Device/ST/STM32H7xx/Include",
           "Drivers/CMSIS/Include",
           "Usercode/Lib/UART",
-          "Usercode/Inc"
+          "Usercode/Inc",
+          "Usercode/Lib/PWM",
+          "Usercode/Lib/ADC",
+          "Usercode/Lib/LCD",
+          "Usercode/Lib/LED",
+          "Usercode/Lib/Button"
         ],
         "libList": [],
         "sourceDirList": [],

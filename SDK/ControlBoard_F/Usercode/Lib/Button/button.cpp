@@ -1,34 +1,24 @@
 /********************************************************************************
- * @file    usermain.hpp
- * @brief   This file contains all the function prototypes for
- *          the usermain.cpp file
+ * @file    button.cpp
+ * @brief   This file provides code for the configuration
+ *          of all buttons.
  *******************************************************************************/
 
-#pragma once
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
-
+#include <button.hpp>
 /* Includes End --------------------------------------------------------------*/
 
 /* Variables -----------------------------------------------------------------*/
 /* Variables End -------------------------------------------------------------*/
 
 /* Class ---------------------------------------------------------------------*/
+/// @brief 按钮1 <
+Button Btn1(Key1_GPIO_Port, Key1_Pin);
+/// @brief 按钮2 OK
+Button Btn2(Key2_GPIO_Port, Key2_Pin);
+/// @brief 按钮3 >
+Button Btn3(Key3_GPIO_Port, Key3_Pin);
 /* Class End -----------------------------------------------------------------*/
 
 /* Function ------------------------------------------------------------------*/
-
-void Usermain();
-
-void Powermain();
-
 /* Function End --------------------------------------------------------------*/
-
-#ifdef __cplusplus
-}
-#endif

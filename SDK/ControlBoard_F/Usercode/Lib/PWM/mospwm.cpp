@@ -1,34 +1,22 @@
 /********************************************************************************
- * @file    usermain.hpp
- * @brief   This file contains all the function prototypes for
- *          the usermain.cpp file
+ * @file    mospwm.cpp
+ * @brief   This file provides code for the configuration
+ *          of mospwm.
  *******************************************************************************/
 
-#pragma once
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
-
+#include <mospwm.hpp>
 /* Includes End --------------------------------------------------------------*/
 
 /* Variables -----------------------------------------------------------------*/
 /* Variables End -------------------------------------------------------------*/
 
 /* Class ---------------------------------------------------------------------*/
+/// @brief 左半桥互补PWM
+CoPWM PWMA(&htim1, TIM_CHANNEL_1, 599);
+/// @brief 右半桥互补PWM
+CoPWM PWMB(&htim1, TIM_CHANNEL_2, 599);
 /* Class End -----------------------------------------------------------------*/
 
 /* Function ------------------------------------------------------------------*/
-
-void Usermain();
-
-void Powermain();
-
 /* Function End --------------------------------------------------------------*/
-
-#ifdef __cplusplus
-}
-#endif
