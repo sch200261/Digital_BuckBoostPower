@@ -29,4 +29,7 @@ Current_RealValue IL(&IL_data[0]);
 bool Key1_state = false;
 bool Key2_state = false;
 bool Key3_state = false;
+
+double exp_voltage = 12.0;
+double exp_current = 1.0;
 /* Class End -----------------------------------------------------------------*/

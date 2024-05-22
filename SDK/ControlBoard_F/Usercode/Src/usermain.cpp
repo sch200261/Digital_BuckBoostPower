@@ -12,12 +12,23 @@ using namespace std;
 #include <samping.h>
 #include <led.hpp>
 #include <lcd.h>
+#include <pid_controller.hpp>
+#include <butterworth.hpp>
+#include <canbus.hpp>
 /* Includes End --------------------------------------------------------------*/
 
 /* Variables -----------------------------------------------------------------*/
+double Cur_Bias;
+double Vol_Bias;
+double Duty;
 /* Variables End -------------------------------------------------------------*/
 
 /* Class ---------------------------------------------------------------------*/
+control_system::PIController<double> ILoopCtrl{0, 160, 0.00002};
+control_system::PIController<double> VLoopCtrl{0.005, 4.5, 0.00002};
+control_system::Saturation ILoopSaturation{0.1, 0.9};
+control_system::Saturation VLoopSaturation{0.0, 5.0};
+
 /* Class End -----------------------------------------------------------------*/
 
 /* Function ------------------------------------------------------------------*/
@@ -29,6 +40,8 @@ void Usermain()
     HAL_TIM_Base_Start_IT(&htim2);
     HAL_TIM_Base_Start_IT(&htim7);
 
+    Control_Enable = false;
+
     // LED测试
     LedMain.SetColor(ColorInit);
     LedMain.LED_ON();
@@ -38,7 +51,7 @@ void Usermain()
     HAL_Delay(1);
 
     // PWM测试
-    double DutyA = 0.500;
+    double DutyA = 0.100;
     double DutyB = 0.900;
     PWMA.SetDuty(DutyA);
     PWMB.SetDuty(DutyB);
@@ -53,15 +66,32 @@ void Usermain()
     Voltage_samping_Start();
     IL_samping_Start();
 
+    txHeader_init();
+    rxFilter_init();
+    HAL_FDCAN_ActivateNotification(&hfdcan1, FDCAN_IT_RX_FIFO0_NEW_MESSAGE, 0);
+    HAL_Delay(10);
+    HAL_FDCAN_Start(&hfdcan1);
+    HAL_Delay(10);
+
+    LedMain.SetColor(ColorWarning);
+
     while (1) {
         // printf("Vin:%d  Vout:%d  Iin:%d  Iout:%d  IL: %d\n", Voltage_data[0], Voltage_data[1], Current_data[0], Current_data[1], IL_data[0]);
-        printf("Vin:%lfV  Vout:%lfV  Iin:%lfA  Iout:%lfA  IL: %lfA\n", Vin.RealValue, Vout.RealValue, Iin.RealValue, Iout.RealValue, IL.RealValue);
-        HAL_Delay(10);
+        // printf("%lf,%lf,%lf,%lf,%lf\n", Vin.RealValue, Vout.RealValue, IL.RealValue, Duty, exp_voltage);
+
+        FDCAN_Send_Msg();
+        HAL_Delay(1000);
     }
 }
 
 void Powermain()
 {
+    Vol_Bias    = exp_voltage - Vout.RealValue;
+    exp_current = VLoopSaturation(VLoopCtrl.Step(Vol_Bias));
+    Cur_Bias    = exp_current - IL.RealValue;
+    Duty        = ILoopSaturation(ILoopCtrl.Step(Cur_Bias));
+    PWMA.SetDuty(Duty);
+    PWMB.SetDuty(0.9);
 }
 
 /* Function End --------------------------------------------------------------*/

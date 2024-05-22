@@ -9,6 +9,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include <samping.h>
+#include <butterworth.hpp>
 /* Includes End --------------------------------------------------------------*/
 
 /* Typedef -------------------------------------------------------------------*/
@@ -33,6 +34,7 @@ class Voltage_RealValue
 {
 private:
     const uint16_t *ptrData;
+    Butter_LP_5_20_40dB_5000Hz<double> filter;
 
 public:
     double RealValue;
@@ -43,7 +45,7 @@ public:
     /// @param  void
     void Convert_RealValue(void)
     {
-        RealValue = *ptrData * VOLTAGE_SENSOR_R / 65535.000;
+        RealValue = filter.Step(*ptrData * VOLTAGE_SENSOR_R / 65535.000);
     }
 
     /// @brief 将ADC原始数据转换为浮点值（带线性校准），应在ADC转换回调函数中使用
@@ -51,7 +53,7 @@ public:
     /// @param _b 线性校准的截距
     void Convert_RealValue_Line_cali(double _k, double _b)
     {
-        RealValue = *ptrData * VOLTAGE_SENSOR_R / 65535.000 * _k + _b;
+        RealValue = filter.Step(*ptrData * VOLTAGE_SENSOR_R / 65535.000 * _k + _b);
     }
 };
 
@@ -60,6 +62,7 @@ class Current_RealValue
 {
 private:
     const uint16_t *ptrData;
+    Butter_LP_5_50_20dB_1000Hz<double> filter;
 
 public:
     double RealValue;
@@ -70,7 +73,7 @@ public:
     /// @param  void
     void Convert_RealValue(void)
     {
-        RealValue = (*ptrData / 65535.0 - 0.5000) * 0.165 / CURRENT_SENSOR_R;
+        RealValue = filter.Step((*ptrData / 65535.0 - 0.5000) * 0.165 / CURRENT_SENSOR_R);
     }
 
     /// @brief 将ADC原始数据转换为浮点值（带线性校准），应在ADC转换回调函数中使用
@@ -78,7 +81,7 @@ public:
     /// @param _b 线性校准的截距
     void Convert_RealValue_Line_cali(double _k, double _b)
     {
-        RealValue = ((*ptrData / 65535.0 - 0.5000) * 0.165 / CURRENT_SENSOR_R) * _k + _b;
+        RealValue = filter.Step(((*ptrData / 65535.0 - 0.5000) * 0.165 / CURRENT_SENSOR_R) * _k + _b);
     }
 };
 
@@ -112,9 +115,13 @@ extern Current_RealValue Iout;
 /// @brief 电感电流
 extern Current_RealValue IL;
 
-
 extern bool Key1_state;
 extern bool Key2_state;
 extern bool Key3_state;
+
+extern double exp_voltage;
+extern double exp_current;
+
+extern bool Control_Enable;
 
 /* Class End -----------------------------------------------------------------*/

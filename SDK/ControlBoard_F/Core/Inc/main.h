@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define Key2_GPIO_Port GPIOB
 #define Key3_Pin GPIO_PIN_3
 #define Key3_GPIO_Port GPIOB
+#define PWM_IN_Pin GPIO_PIN_15
+#define PWM_IN_GPIO_Port GPIOA
 #define LEDR_Pin GPIO_PIN_8
 #define LEDR_GPIO_Port GPIOB
 #define Key1_Pin GPIO_PIN_5

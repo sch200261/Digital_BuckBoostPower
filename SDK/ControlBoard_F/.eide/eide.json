@@ -90,7 +90,9 @@
           "Usercode/Lib/ADC",
           "Usercode/Lib/LCD",
           "Usercode/Lib/LED",
-          "Usercode/Lib/Button"
+          "Usercode/Lib/Button",
+          "Usercode/Lib/control_system",
+          "Usercode/Lib/CAN"
         ],
         "libList": [],
         "sourceDirList": [],
