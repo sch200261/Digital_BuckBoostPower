@@ -15,3 +15,4 @@ void rxFilter_init(void);
 uint8_t FDCAN_Send_Msg(void);
 uint8_t FDCAN_Get_Msg(void);
 void set_exp_vol(void);
+void set_tx_msg(void);

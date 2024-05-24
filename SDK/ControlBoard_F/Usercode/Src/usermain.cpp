@@ -24,8 +24,8 @@ double Duty;
 /* Variables End -------------------------------------------------------------*/
 
 /* Class ---------------------------------------------------------------------*/
-control_system::PIController<double> ILoopCtrl{0, 160, 0.00002};
-control_system::PIController<double> VLoopCtrl{0.005, 4.5, 0.00002};
+control_system::PIController<double> ILoopCtrl{0.005, 150, 0.00002};
+control_system::PIController<double> VLoopCtrl{0.01, 1.5, 0.00002};
 control_system::Saturation ILoopSaturation{0.1, 0.9};
 control_system::Saturation VLoopSaturation{0.0, 5.0};
 
@@ -77,10 +77,10 @@ void Usermain()
 
     while (1) {
         // printf("Vin:%d  Vout:%d  Iin:%d  Iout:%d  IL: %d\n", Voltage_data[0], Voltage_data[1], Current_data[0], Current_data[1], IL_data[0]);
-        // printf("%lf,%lf,%lf,%lf,%lf\n", Vin.RealValue, Vout.RealValue, IL.RealValue, Duty, exp_voltage);
+        printf("%lf,%lf,%lf,%lf,%lf\n", Vin.RealValue, Vout.RealValue, IL.RealValue, Duty, exp_voltage);
 
-        FDCAN_Send_Msg();
-        HAL_Delay(1000);
+        // FDCAN_Send_Msg();
+        HAL_Delay(5);
     }
 }
 
@@ -92,6 +92,11 @@ void Powermain()
     Duty        = ILoopSaturation(ILoopCtrl.Step(Cur_Bias));
     PWMA.SetDuty(Duty);
     PWMB.SetDuty(0.9);
+
+    // Cur_Bias    = exp_current - IL.RealValue;
+    // Duty        = ILoopSaturation(ILoopCtrl.Step(Cur_Bias));
+    // PWMA.SetDuty(Duty);
+    // PWMB.SetDuty(0.9);
 }
 
 /* Function End --------------------------------------------------------------*/

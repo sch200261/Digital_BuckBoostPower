@@ -44,7 +44,7 @@ TXFRAME txframe; // 发送数据帧
 RXFRAME rxframe; // 接收数据帧
 
 uint32_t TxID = 0x001; // 发送器ID
-uint32_t RxID = 0x064; // 接收器ID
+uint32_t RxID = 0x010; // 接收器ID
 
 FDCAN_TxHeaderTypeDef txHeader;
 FDCAN_RxHeaderTypeDef rxHeader;
@@ -60,7 +60,7 @@ void txHeader_init(void)
     txHeader.DataLength          = FDCAN_DLC_BYTES_8;
     txHeader.ErrorStateIndicator = FDCAN_ESI_ACTIVE;
     txHeader.BitRateSwitch       = FDCAN_BRS_OFF;
-    txHeader.FDFormat            = FDCAN_FD_CAN;
+    txHeader.FDFormat            = FDCAN_CLASSIC_CAN;
     txHeader.TxEventFifoControl  = FDCAN_NO_TX_EVENTS;
     txHeader.MessageMarker       = 0;
 }
@@ -92,7 +92,6 @@ uint8_t FDCAN_Send_Msg(void)
     if (HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &txHeader, (uint8_t *)&txframe) != HAL_OK) {
         return 1;
     }
-    printf("ok\n");
     return 0;
 }
 
@@ -113,6 +112,14 @@ void set_exp_vol(void)
     exp_voltage  = value;
 }
 
+void set_tx_msg(void)
+{
+    txframe.vol_in  = (uint16_t)(Vin.RealValue / 75.0 * 65535);
+    txframe.vol_out = (uint16_t)(Vout.RealValue / 75.0 * 65535);
+    txframe.cur_in  = (uint8_t)(Iin.RealValue / 25.0 * 255);
+    txframe.cur_out = (uint8_t)(Iout.RealValue / 25.0 * 255);
+}
+
 uint16_t get_int_vol(double vol)
 {
     uint16_t value = vol / 75.0 * 65535;
@@ -121,6 +128,6 @@ uint16_t get_int_vol(double vol)
 
 uint8_t get_int_cur(double cur)
 {
-    double value = cur / 25.0 * 65535;
+    double value = cur / 25.0 * 255;
     return value;
 }

@@ -60,7 +60,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     }
 
     if (htim == &htim2) {
-        if (Vin.RealValue > 70.0 || Vout.RealValue > 70.0 || abs(Iin.RealValue) > 5.0 || abs(IL.RealValue) > 5.0 || abs(Iout.RealValue) > 5.0) {
+        if (Vin.RealValue > 70.0 || Vout.RealValue > 70.0 || abs(Iin.RealValue) > 30.0 || abs(IL.RealValue) > 30.0 || abs(Iout.RealValue) > 35.0) {
             LedMain.SetColor(ColorError);
             PWMA.SetDuty(0.000);
             PWMB.SetDuty(0.000);
@@ -85,6 +85,7 @@ void HAL_FDCAN_RxFifo0Callback(FDCAN_HandleTypeDef *hfdcan, uint32_t RxFifo0ITs)
     if ((RxFifo0ITs & FDCAN_IT_RX_FIFO0_NEW_MESSAGE) != RESET) {
         FDCAN_Get_Msg();
         set_exp_vol();
+        set_tx_msg();
         FDCAN_Send_Msg();
     }
     // UNUSED(RxFifo0ITs);
