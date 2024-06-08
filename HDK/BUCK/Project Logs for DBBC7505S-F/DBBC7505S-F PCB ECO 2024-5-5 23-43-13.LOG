@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=ADC_Vin Pin=TP14-1
+Removed Pin From Net: NetName=ADC_Iin Pin=TP15-1
+Removed Pin From Net: NetName=ADC_Vout Pin=TP16-1
+Removed Pin From Net: NetName=ADC_IL Pin=TP17-1
+Removed Pin From Net: NetName=ADC_Iout Pin=TP18-1
+Removed Member From Class: ClassName=DBBC7505S-F Member=TP14
+Removed Member From Class: ClassName=DBBC7505S-F Member=TP15
+Removed Member From Class: ClassName=DBBC7505S-F Member=TP16
+Removed Member From Class: ClassName=DBBC7505S-F Member=TP17
+Removed Member From Class: ClassName=DBBC7505S-F Member=TP18

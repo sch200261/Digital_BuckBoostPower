@@ -1,0 +1,29 @@
+Added Component: Designator=U1(SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20200615/C605420_EE0E567F8FF01D919583B114644E1CC3.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "GS8552-SR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gain Bandwidth Product(GBP)"; Value = "1.8MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "GS8552-SR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Gainsil(¾Ûä­)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "GS8552-SR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "GS8552-SR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "Ë«Â·"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40¡æ~+125¡æ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Slew Rate(SR)"; Value = "0.95V/us"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SOIC-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C157716"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Current"; Value = "180uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Voltage"; Value = "1.8V~5.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "GS8552-SR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ADC_Vin Pin=U1-1
+Added Pin To Net: NetName=NetR2_1 Pin=U1-2
+Added Pin To Net: NetName=NetR15_1 Pin=U1-3
+Added Pin To Net: NetName=C1N Pin=U1-4
+Added Pin To Net: NetName=NetR17_2 Pin=U1-5
+Added Pin To Net: NetName=NetR3_1 Pin=U1-6
+Added Pin To Net: NetName=ADC_Vout Pin=U1-7
+Added Pin To Net: NetName=+3V3 Pin=U1-8
+Added Member To Class: ClassName=DBBC7505S-F Member=Component U1 GS8552-SR

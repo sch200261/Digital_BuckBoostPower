@@ -1,0 +1,25 @@
+Added Component: Designator=U11(SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Data Rate"; Value = "5Mbps"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://www.ti.com/cn/lit/gpn/tcan337g"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "TCAN332GDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "3V~3.6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TI(德州仪器)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "TCAN332GDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40℃~+125℃"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SOIC-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C191010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supply Voltage"; Value = "3V~3.6V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "TCAN332GDR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "收发器"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=CAN_TX Pin=U11-1
+Added Pin To Net: NetName=C1N Pin=U11-2
+Added Pin To Net: NetName=+3V3 Pin=U11-3
+Added Pin To Net: NetName=CAN_RX Pin=U11-4
+Added Pin To Net: NetName=CANL Pin=U11-6
+Added Pin To Net: NetName=CANH Pin=U11-7
+Added Member To Class: ClassName=DBBC7505S-F Member=Component U11 TCAN332GDR

@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=C1N Pin=R23-2
+Removed Member From Class: ClassName=DBBC7505S-F Member=R23
+Added Pin To Net: NetName=C1N Pin=C1-1
+Added Pin To Net: NetName=C1N Pin=C2-2
+Added Pin To Net: NetName=C1N Pin=C3-1
+Added Pin To Net: NetName=C1N Pin=C4-1
+Added Pin To Net: NetName=C1N Pin=C5-1
+Added Pin To Net: NetName=C1N Pin=C6-1
+Added Pin To Net: NetName=C1N Pin=C7-1
+Added Pin To Net: NetName=C1N Pin=C22-1
+Added Pin To Net: NetName=C1N Pin=C23-1
+Added Pin To Net: NetName=C1N Pin=C39-2
+Added Pin To Net: NetName=C1N Pin=C44-2
+Added Pin To Net: NetName=C1N Pin=R18-1
+Added Pin To Net: NetName=C1N Pin=R19-1
+Added Pin To Net: NetName=C1N Pin=TP6-1
+Added Pin To Net: NetName=C1N Pin=U1-4
+Added Pin To Net: NetName=C1N Pin=U2-3
+Added Pin To Net: NetName=C1N Pin=U3-2
+Added Pin To Net: NetName=C1N Pin=U3-7
+Added Pin To Net: NetName=C1N Pin=U5-2
+Added Pin To Net: NetName=C1N Pin=U5-7
+Added Pin To Net: NetName=C1N Pin=U6-2
+Added Pin To Net: NetName=C1N Pin=U6-7
+Added Pin To Net: NetName=C1N Pin=U9-G1
+Added Member To Class: ClassName=DBBC7505S-F Member=Component U9 STM32H743VIH6

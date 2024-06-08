@@ -1,0 +1,40 @@
+Removed Pin From Net: NetName=NRST Pin=H2-1
+Removed Pin From Net: NetName=+5 Pin=H2-6
+Removed Pin From Net: NetName=C1N Pin=H2-7
+Removed Member From Class: ClassName=DBBC7505S-F Member=H2
+Added Component: Designator=H?(HDR-SMD_7P-P2.54-H-F-L11.5)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20220822/AB9A82E80C220285963E5EFA3BFD32FF.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "X6511FRS-06-C85D30"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Holes Structure"; Value = "1x6P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Height"; Value = "8.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "º‰æ‡:2.54mm 1x6P Œ‘Ã˘"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "XKB Connectivity(÷–π˙–«¿§)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "X6511FRS-06-C85D30"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "Œ‘Ã˘"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "X6511FRS-06-C85D30"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Holes"; Value = "6P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "µ•≈≈"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SMD,P=2.54mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C5142239"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "X6511FRS-06-C85D30"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NRST Pin=H?-1
+Added Pin To Net: NetName=+5 Pin=H?-6
+Added Pin To Net: NetName=C1N Pin=H?-7
+Added Pin To Net: NetName=NetH?_2 Pin=H?-2
+Added Pin To Net: NetName=NetH?_2 Pin=R47-1
+Added Net: Name=NetH?_2
+Added Pin To Net: NetName=NetH?_3 Pin=H?-3
+Added Pin To Net: NetName=NetH?_3 Pin=R45-1
+Added Net: Name=NetH?_3
+Added Pin To Net: NetName=NetH?_4 Pin=H?-4
+Added Pin To Net: NetName=NetH?_4 Pin=R43-1
+Added Net: Name=NetH?_4
+Added Pin To Net: NetName=NetH?_5 Pin=H?-5
+Added Pin To Net: NetName=NetH?_5 Pin=R41-1
+Added Net: Name=NetH?_5
+Added Member To Class: ClassName=DBBC7505S-F Member=Component H? 7PŒ‘Ã˘≈≈ƒ∏
